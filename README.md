@@ -1,2 +1,6 @@
 # ParticlesCollisions
-Program wykorzystuje SFML do wyswietlania czastek.
+Symulacja gazu doskonalego.
+Biale - czasteczki tlenu,
+Niebieskie - czasteczki wodoru,
+Fioletowe - czasteczki argonu
+Program wykorzystuje SFML do wyswietlania czasteczek na ekranie.

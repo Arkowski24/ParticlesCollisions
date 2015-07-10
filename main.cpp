@@ -113,7 +113,7 @@ int main()
 			}
 			window.draw(shape);
 		}
-		while (T.asSeconds() < 0.001){ T = clock.getElapsedTime(); }
+		while (T.asSeconds() < 0.045){ T = clock.getElapsedTime(); }
 		window.display();
 		clock.restart();
 	}

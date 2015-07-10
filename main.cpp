@@ -23,7 +23,7 @@ int main()
 	//N2 - 156 | O2 - 42 | Ar - 2 | All - 200
 
 	//Nitrogen Particles
-	//Mass - 4.652 × 10^-26 kg
+	//Mass - 4.652 Ã— 10^-26 kg
 	//Radius - 112 * 10^-12 m
 	A.SetMass(4.652 * pow(10, -26));
 	A.SetRadius(5.6);
@@ -42,7 +42,7 @@ int main()
 	}
 
 	//Oxygen Particles
-	//Mass - 5.314 × 10^-26 kg
+	//Mass - 5.314 Ã— 10^-26 kg
 	//Radius - 96 * 10^-12 m
 	A.SetMass(5.314 * pow(10, -26));
 	A.SetRadius(4.8);
@@ -61,7 +61,7 @@ int main()
 	}
 
 	//Argon Particles
-	//Mass - 6.642 × 10^-26
+	//Mass - 6.642 Ã— 10^-26
 	//Radius - 71 * 10^-12 m
 	A.SetMass(6.642 * pow(10, -26));
 	A.SetRadius(3.55);
@@ -81,9 +81,7 @@ int main()
 
 	while (window.isOpen())
 	{
-		//sf::Time T = clock.getElapsedTime();
-		//while (T.asSeconds() < 0.001){ T = clock.getElapsedTime(); }
-		//clock.restart();
+		sf::Time T = clock.getElapsedTime();
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
@@ -115,8 +113,9 @@ int main()
 			}
 			window.draw(shape);
 		}
+		while (T.asSeconds() < 0.001){ T = clock.getElapsedTime(); }
 		window.display();
-
+		clock.restart();
 	}
 	return 0;
 }
